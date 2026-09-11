@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- rounded-square tile (macOS app-icon squircle body, 824 on a 1024 grid) -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="#2B3050"/>
+  <!-- mouse body: vertical capsule, top view -->
+  <rect x="342" y="232" width="340" height="560" rx="170" fill="#FFFFFF"/>
+  <!-- scroll track: cut through the mouse body -->
+  <rect x="484" y="388" width="56" height="148" rx="28" fill="#2B3050"/>
+  <!-- scroll wheel: accent -->
+  <rect x="494" y="408" width="36" height="108" rx="18" fill="#2DD4BF"/>
+  <!-- scroll direction: up chevron -->
+  <path d="M512 348 L490 376 L534 376 Z" fill="#2DD4BF"/>
+  <!-- scroll direction: down chevron -->
+  <path d="M512 576 L490 548 L534 548 Z" fill="#2DD4BF"/>
+</svg>

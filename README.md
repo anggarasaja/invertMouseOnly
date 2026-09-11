@@ -130,6 +130,7 @@ The whole app lives in a handful of files in the repo root:
 | `main.swift` | Everything: the event tap, the menu, the login item. |
 | `build.sh`   | Compiles `main.swift` into `invertMouseOnly.app` with `swiftc`. |
 | `install.sh` | Builds and copies the app into `/Applications`. |
+| `icon/`      | App icon — `invertMouseOnly.icns` (bundle) + its `.svg` source. |
 
 No Xcode project, no package manifest, no third-party code — by design. See
 [CONTRIBUTING.md](.github/CONTRIBUTING.md) for how to help out within those
