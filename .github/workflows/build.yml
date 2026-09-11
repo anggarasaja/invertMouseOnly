@@ -1,0 +1,25 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    name: Build invertMouseOnly.app
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: ./build.sh
+
+      - name: Verify bundle
+        run: |
+          set -euxo pipefail
+          test -x invertMouseOnly.app/Contents/MacOS/invertMouseOnly
+          test -f invertMouseOnly.app/Contents/Info.plist
+          plutil -lint invertMouseOnly.app/Contents/Info.plist
+          echo "Build OK"
