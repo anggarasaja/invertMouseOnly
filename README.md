@@ -16,6 +16,21 @@ one thing, done well.
 Written for a Logitech Signature M650, whose firmware doesn't expose the HID++
 `0x2121` wheel-invert register, so it can't be flipped on the device itself.
 
+## Download the app
+
+Get the ready-to-run app from the
+[Releases page](https://github.com/anggarasaja/invertMouseOnly/releases/latest) —
+no build tools needed:
+
+[![Release](https://img.shields.io/github/v/release/anggarasaja/invertMouseOnly)](https://github.com/anggarasaja/invertMouseOnly/releases/latest)
+
+Download `invertMouseOnly-<version>.zip`, unzip it, then drag
+`invertMouseOnly.app` into `/Applications` (or double-click to run right away).
+On first launch it asks for **Accessibility** permission — see
+[Install](#install).
+
+Prefer to build it yourself? `./build.sh` — it's one file, takes seconds.
+
 ## How it works
 
 A `CGEventTap` sits on the scroll-wheel event stream. Trackpads and the Magic
@@ -32,6 +47,9 @@ through untouched.
 Produces `invertMouseOnly.app`. Requires the Xcode Command Line Tools.
 
 ## Install
+
+From a [release](#download-the-app), unzip and drag `invertMouseOnly.app` into
+`/Applications`. If you built it yourself with `./build.sh`, same result:
 
 ```sh
 cp -R invertMouseOnly.app /Applications/
