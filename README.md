@@ -139,6 +139,13 @@ limits.
 A GitHub Actions workflow (`.github/workflows/build.yml`) builds the app on a
 macOS runner on every push, so a merge can never ship a broken build.
 
+## Support this project
+
+If Invert Mouse Only keeps you from frowning at your cursor, you can help keep
+it around with a coffee:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/anggarasaja)
+
 ## License
 
 MIT — see [LICENSE](LICENSE). Do whatever you want with it (and if you remove
